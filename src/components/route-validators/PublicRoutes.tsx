@@ -1,4 +1,4 @@
-import ValidateRoute from "./ValidatePath";
+import ValidateRoute from "./ValidateRoute";
 import { auth } from "../../App";
 
 export const PublicRoutes = () => {

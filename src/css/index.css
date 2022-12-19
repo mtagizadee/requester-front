@@ -42,4 +42,8 @@
     }
 }
 
-@layer components {}
+@layer components {
+    .auth-form {
+        @apply w-full text-center;
+    }
+}
