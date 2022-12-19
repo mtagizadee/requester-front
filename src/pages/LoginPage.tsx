@@ -1,8 +1,8 @@
 const LoginPage = () => {
     return (
-        <div>
+        <form>
             LoginPage
-        </div>
+        </form>
     );
 }
 
