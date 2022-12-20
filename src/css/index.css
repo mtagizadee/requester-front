@@ -5,45 +5,45 @@
 @tailwind utilities;
 
 @layer utilities {
-    .center-content {
-        @apply flex justify-center items-center;
-    }
+  .center-content {
+    @apply flex justify-center items-center;
+  }
 
-    .full-screen {
-        @apply w-full h-screen;
-    }
+  .full-screen {
+    @apply w-full h-screen;
+  }
 }
 
 @layer base {
-    * {
-        @apply box-border font-semibold font-main;
-    }
+  * {
+    @apply box-border font-semibold font-main;
+  }
 
-    body {
-        @apply bg-bg-body text-dark;
-    }
+  body {
+    @apply bg-bg-body text-dark;
+  }
 
-    h1,
-    h2,
-    h3 {
-        @apply font-bold;
-    }
+  h1,
+  h2,
+  h3 {
+    @apply font-bold;
+  }
 
-    h1 {
-        @apply text-4xl;
-    }
+  h1 {
+    @apply text-4xl;
+  }
 
-    h2 {
-        @apply text-3xl;
-    }
+  h2 {
+    @apply text-3xl;
+  }
 
-    h3 {
-        @apply text-2xl;
-    }
+  h3 {
+    @apply text-2xl;
+  }
 }
 
 @layer components {
-    .auth-form {
-        @apply w-full text-center;
-    }
+  .auth-form {
+    @apply w-full text-center;
+  }
 }

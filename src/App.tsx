@@ -1,15 +1,14 @@
-import { Routes, Route, BrowserRouter, Navigate } from 'react-router-dom';
-import LoginPage from './pages/LoginPage';
-import NotFoundPage from './pages/NotFoundPage';
-import { PublicRoutes, PrivateRoutes } from './components/route-validators';
-import routes from './constants/routes';
-import AuthLayout from './components/layout/AuthLayout';
+import { Routes, Route, BrowserRouter, Navigate } from "react-router-dom";
+import LoginPage from "./pages/LoginPage";
+import NotFoundPage from "./pages/NotFoundPage";
+import { PublicRoutes, PrivateRoutes } from "./components/route-validators";
+import routes from "./constants/routes";
+import AuthLayout from "./components/layout/AuthLayout";
 
 // TODO: remove this
 export const auth = false;
 
 const App = () => {
-
   return (
     <BrowserRouter>
       <Routes>
@@ -19,11 +18,11 @@ const App = () => {
           </Route>
         </Route>
 
-        <Route path='*' element={<Navigate to={routes.notFoundRoute} />} />
+        <Route path="*" element={<Navigate to={routes.notFoundRoute} />} />
         <Route path={routes.notFoundRoute} element={<NotFoundPage />} />
       </Routes>
     </BrowserRouter>
   );
-}
+};
 
 export default App;

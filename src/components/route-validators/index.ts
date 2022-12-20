@@ -1,3 +1,3 @@
-export * from './PublicRoutes';
-export * from './PrivateRoutes';
-export * from './ValidateRoute';
+export * from "./PublicRoutes";
+export * from "./PrivateRoutes";
+export * from "./ValidateRoute";
