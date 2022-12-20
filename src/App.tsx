@@ -4,6 +4,7 @@ import NotFoundPage from "./pages/NotFoundPage";
 import { PublicRoutes, PrivateRoutes } from "./components/route-validators";
 import routes from "./constants/routes";
 import AuthLayout from "./components/layout/AuthLayout";
+import RegistrationPage from "./pages/RegistrationPage";
 
 // TODO: remove this
 export const auth = false;
@@ -15,6 +16,7 @@ const App = () => {
         <Route element={<PublicRoutes />}>
           <Route path={routes.authRoute} element={<AuthLayout />}>
             <Route path={routes.loginRout()} element={<LoginPage />} />
+            <Route path={routes.registerRoute()} element={<RegistrationPage />} />
           </Route>
         </Route>
 
